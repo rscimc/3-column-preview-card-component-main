@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs)*/
+    --very-light-gray: hsl(0, 0%, 95%);  /*(background, headings, buttons)*/
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: var(--transparent-white);
+}
+
+.container {
+    background-color: var(--very-light-gray);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: var(--very-light-gray);
+    border: solid 2px var(--very-light-gray);
+    border-radius: 24px;
+    padding: 12px 24px;
+}
+
+.button:hover {
+    background-color: transparent;
+    color: var(--very-light-gray);
+}
+
+.card1 {
+    background-color: var(--bright-orange);
+    width: 90%;
+    margin-top: 10%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card1 a {
+    color: var(--bright-orange);
+}
+
+.card2 {
+    background-color: var(--dark-cyan);
+    width: 90%;
+}
+
+.card2 a {
+    color: var(--dark-cyan);
+}
+
+.card3 {
+    background-color: var(--very-dark-cyan);
+    width: 90%;
+    margin-bottom: 10%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.card3 a {
+    color: var(--very-dark-cyan);
+}
+
+.icon {
+    padding: 5%;
+}
+
+.title {
+    padding: 5%;
+}
+
+.phrase {
+    padding: 5%;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 375px) {
+
+}
