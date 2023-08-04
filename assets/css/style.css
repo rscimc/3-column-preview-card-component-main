@@ -25,6 +25,7 @@ h2 {
 
 a {
     text-decoration: none;
+    padding: 5%;
 }
 
 p {
@@ -45,6 +46,8 @@ p {
     border: solid 2px var(--very-light-gray);
     border-radius: 24px;
     padding: 12px 24px;
+    line-height: 100px;
+    margin: 5%;
 }
 
 .button:hover {
@@ -55,6 +58,7 @@ p {
 .card1 {
     background-color: var(--bright-orange);
     width: 90%;
+    height: auto    ;
     margin-top: 10%;
     border-radius: 1rem 1rem 0 0;
 }
@@ -96,13 +100,38 @@ p {
 }
 
 .attribution { 
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution p {
+    color: var(--very-dark-cyan);
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--bright-orange);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
 
+    .card1 {
+        margin-top: 0;
+        border-radius: 1rem 0 0 1rem;
+        margin: 10% 0 10% 10%;
+    }
+    
+    .card2 {
+        margin: 10% 0 10% 0;
+    }
+
+    .card3 {
+        border-radius: 0 1rem 1rem 0;
+        margin: 10% 10% 10% 0;
+    }
+
+    .attribution { 
+        margin-top: -9%;
+    }
 }
